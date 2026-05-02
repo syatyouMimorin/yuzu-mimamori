@@ -5,31 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ゆずちゃん見守りダッシュボード</title>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=1.0.0">
+  <link rel="stylesheet" href="style.css?v=1.0.1">
 </head>
 <body>
 
 <header>
-  <h1>ゆずちゃん見守り</h1>
-  <div id="clock"></div>
+  <div id="clock-time"></div>
+  <div id="clock-date"></div>
 </header>
 
 <div class="grid">
   <div class="card card-milk">
     <div class="card-label">ミルク</div>
-    <div id="milk-content"><div class="no-data">データを読み込み中...</div></div>
+    <div id="milk-content"><div class="no-data">記録なし</div></div>
+    <div class="input-row">
+      <input type="time" id="milk-input" class="time-input">
+      <button class="btn btn-milk" onclick="recordMilk()">今授乳した</button>
+    </div>
   </div>
   <div class="card card-sleep">
     <div class="card-label">睡眠</div>
-    <div id="sleep-content"><div class="no-data">データを読み込み中...</div></div>
+    <div id="sleep-content"><div class="no-data">記録なし</div></div>
+    <div class="input-row">
+      <input type="time" id="sleep-input" class="time-input">
+      <button class="btn btn-sleep" onclick="recordSleep()">今寝た</button>
+    </div>
+    <div class="input-row" style="margin-top: 8px;">
+      <button class="btn btn-wake" onclick="recordWake()">起きた</button>
+    </div>
   </div>
 </div>
 
-<footer>
-  5分おきに自動更新
-  <div id="status"></div>
-</footer>
-
-<script src="app.js?v=1.0.0"></script>
+<script src="app.js?v=1.0.1"></script>
 </body>
 </html>
