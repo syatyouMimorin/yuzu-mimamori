@@ -36,7 +36,7 @@ header {
 
 #clock-time {
   font-family: 'DM Serif Display', serif;
-  font-size: 4rem;
+  font-size: 12rem;
   font-weight: 400;
   color: var(--text-primary);
   line-height: 1;
