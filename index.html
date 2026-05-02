@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ゆずちゃん見守りダッシュボード</title>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=1.0.2">
+  <link rel="stylesheet" href="style.css?v=1.0.3">
 </head>
 <body>
 
@@ -20,7 +20,7 @@
     <div id="milk-content"><div class="no-data">記録なし</div></div>
     <div class="input-row">
       <input type="time" id="milk-input" class="time-input">
-      <button class="btn btn-milk" onclick="recordMilk()">今授乳した</button>
+      <button class="btn btn-milk" onclick="recordMilk()">授乳した</button>
     </div>
   </div>
   <div class="card card-sleep">
@@ -28,7 +28,7 @@
     <div id="sleep-content"><div class="no-data">記録なし</div></div>
     <div class="input-row">
       <input type="time" id="sleep-input" class="time-input">
-      <button class="btn btn-sleep" onclick="recordSleep()">今寝た</button>
+      <button class="btn btn-sleep" onclick="recordSleep()">寝た</button>
     </div>
     <div class="input-row" style="margin-top: 8px;">
       <button class="btn btn-wake" onclick="recordWake()">起きた</button>
@@ -36,6 +36,6 @@
   </div>
 </div>
 
-<script src="app.js?v=1.0.2"></script>
+<script src="app.js?v=1.0.3"></script>
 </body>
 </html>
